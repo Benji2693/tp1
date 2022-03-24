@@ -12,14 +12,15 @@ class Tp1:
 
     def syracuse(x):
         x.ouvertureFichier()
+        val = int(x.valeur)
         listeSyracuse = []
-        while x.valeur != 1:
-            if (x.valeur%2==1) :
-                x.valeur = x.valeur*3+1
-                listeSyracuse.append(x)
+        while val != 1:
+            if (val%2==1) :
+                val = val*3+1
+                listeSyracuse.append(val)
             else:
-                x.valeur = x.valeur // 2
-                listeSyracuse.append(x.valeur)
+                val = val // 2
+                listeSyracuse.append(val)
         print(listeSyracuse)
 
 print("Entrer le fichier contenant la valeur pour appliquer la suite de Syracuse: ")
