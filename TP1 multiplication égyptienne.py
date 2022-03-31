@@ -12,5 +12,5 @@ def multiplicationEgyptienne(n, p):
 print("Entrer 2 valeurs à multiplier: ")
 a = int(input())
 b = int(input())
-test = multiplicationEgyptienne(a, b)
+test = multiplicationEgyptienne(200, 1000)
 print(a," x ",b," = ",test)
